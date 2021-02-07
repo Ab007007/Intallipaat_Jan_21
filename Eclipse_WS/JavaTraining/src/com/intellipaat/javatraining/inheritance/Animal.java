@@ -4,7 +4,7 @@ public class Animal extends Living
 {
 
 	
-		void see()
+		final void see()
 		{
 			System.out.println("Animal can see using eyes");
 		}

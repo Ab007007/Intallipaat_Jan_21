@@ -8,6 +8,7 @@ public class Cow extends Animal
 		System.out.println(" Resides in Village House");
 	}
 	
+	
 	public static void main(String[] args) {
 		Cow c  = new Cow();
 		
