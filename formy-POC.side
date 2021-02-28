@@ -1,0 +1,364 @@
+{
+  "id": "dbca8fef-02d2-43d8-8c3e-b7282c408f27",
+  "version": "2.0",
+  "name": "formy-POC",
+  "url": "http://formy-project.herokuapp.com",
+  "tests": [{
+    "id": "a5bcfd9f-3cfc-4b59-baab-2bd0e66d278a",
+    "name": "FormFilling",
+    "commands": [{
+      "id": "7c3cfd8e-0f12-402f-ba61-02313b88171b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "226aea32-f65f-4dad-a689-581d93fccf25",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Complete Web Form",
+      "targets": [
+        ["linkText=Complete Web Form", "linkText"],
+        ["css=li:nth-child(18) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Complete Web Form')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/form')])[3]", "xpath:href"],
+        ["xpath=//li[14]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ff9c483-6907-4d55-8531-031b898de596",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='first-name']",
+      "targets": [
+        ["id=first-name", "id"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Aravinda"
+    }, {
+      "id": "1bf7f1af-b814-4bb5-ad91-5da04db5f3e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=last-name",
+      "targets": [
+        ["id=last-name", "id"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "HB"
+    }, {
+      "id": "e4f63061-d382-44de-8674-9e7263e184d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=job-title",
+      "targets": [
+        ["id=job-title", "id"],
+        ["css=#job-title", "css:finder"],
+        ["xpath=//input[@id='job-title']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Trainer"
+    }, {
+      "id": "8fdba92d-ae5b-4516-87b9-7be022f1dba4",
+      "comment": "",
+      "command": "click",
+      "target": "id=radio-button-3",
+      "targets": [
+        ["id=radio-button-3", "id"],
+        ["css=#radio-button-3", "css:finder"],
+        ["xpath=//input[@id='radio-button-3']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49816cfe-d436-4fbd-a289-4333c876ee29",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkbox-1",
+      "targets": [
+        ["id=checkbox-1", "id"],
+        ["css=#checkbox-1", "css:finder"],
+        ["xpath=//input[@id='checkbox-1']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c016f2b-5fb1-4f20-88a5-499bc58dc299",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-menu",
+      "targets": [
+        ["id=select-menu", "id"],
+        ["css=#select-menu", "css:finder"],
+        ["xpath=//select[@id='select-menu']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3971fc-d9d6-4996-9005-37c6a51213b4",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-menu",
+      "targets": [],
+      "value": "label=10+"
+    }, {
+      "id": "b4d56158-6adb-4f89-a578-737c8738c660",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-menu",
+      "targets": [
+        ["id=select-menu", "id"],
+        ["css=#select-menu", "css:finder"],
+        ["xpath=//select[@id='select-menu']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46677cba-3ee8-4884-a714-7a082b682221",
+      "comment": "",
+      "command": "click",
+      "target": "id=datepicker",
+      "targets": [
+        ["id=datepicker", "id"],
+        ["css=#datepicker", "css:finder"],
+        ["xpath=//input[@id='datepicker']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e30070f-dfc2-49b9-a1b5-6e610f9380e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today:nth-child(7)",
+      "targets": [
+        ["css=.today:nth-child(7)", "css:finder"],
+        ["xpath=//tr[4]/td[7]", "xpath:position"],
+        ["xpath=//td[contains(.,'27')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba0a0d05-d390-47ba-9cc3-13415464fafa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Submit",
+      "targets": [
+        ["linkText=Submit", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Submit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/thanks')]", "xpath:href"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "17f4b414-7b19-443b-9e82-83bb2ec63e16",
+    "name": "AutoSuggetion",
+    "commands": [{
+      "id": "753e1307-0cdd-40f0-9be4-2daab6f56816",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdf60626-eab8-4fe8-aed8-48ed5b6dfb76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "691x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "154ec9ab-bc79-4acf-98ba-9905bdeb352c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Buttons",
+      "targets": [
+        ["linkText=Buttons", "linkText"],
+        ["css=li:nth-child(6) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Buttons')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/buttons')])[2]", "xpath:href"],
+        ["xpath=//div/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "979bdf59-ab64-4a3b-8b21-3e2028f9052d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 > .btn-primary",
+      "targets": [
+        ["css=.col-sm-8 > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Primary')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de04f752-0a2b-4e41-949f-6c9801afc760",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-link",
+      "targets": [
+        ["css=.btn-link", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//button[6]", "xpath:position"],
+        ["xpath=//button[contains(.,'Link')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0375c6d1-5024-43b1-ae3b-2546a78ee39e",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnGroupDrop1",
+      "targets": [
+        ["id=btnGroupDrop1", "id"],
+        ["css=#btnGroupDrop1", "css:finder"],
+        ["xpath=//button[@id='btnGroupDrop1']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "784322f7-facc-440e-bd72-a6ed792fd2b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dropdown link 1",
+      "targets": [
+        ["linkText=Dropdown link 1", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Dropdown link 1')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dropdown link 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aa9ed0f5-5d56-4b98-a4a0-fdf30777ce54",
+    "name": "FormyWithValidation",
+    "commands": [{
+      "id": "a5c7aa04-bf6d-4bf3-b578-e31f484d92ec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "745a134a-af68-4639-a30b-31da7fff1309",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-3",
+      "targets": [],
+      "value": "Welcome to Formy"
+    }, {
+      "id": "b1fc718d-7212-466f-b62e-496db438ff1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkbox",
+      "targets": [
+        ["linkText=Checkbox", "linkText"],
+        ["css=li:nth-child(7) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkbox')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/checkbox')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7b1905-395b-4bfe-a327-67b5790813b3",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=checkbox-1",
+      "targets": [
+        ["id=checkbox-1", "id"],
+        ["css=#checkbox-1", "css:finder"],
+        ["xpath=//input[@id='checkbox-1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef54c2d-0023-4bd9-adbe-63834e27631b",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkbox-1",
+      "targets": [
+        ["id=checkbox-1", "id"],
+        ["css=#checkbox-1", "css:finder"],
+        ["xpath=//input[@id='checkbox-1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8120b360-c0bb-45d0-a1fd-e195faa0d314",
+      "comment": "",
+      "command": "click",
+      "target": "id=logo",
+      "targets": [
+        ["id=logo", "id"],
+        ["css=#logo", "css:finder"],
+        ["xpath=//a[contains(text(),'Formy')]", "xpath:link"],
+        ["xpath=//a[@id='logo']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3d1cc39-012d-4185-9e0f-28a9251ade6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dropdown",
+      "targets": [
+        ["linkText=Dropdown", "linkText"],
+        ["css=li:nth-child(10) > .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dropdown')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/dropdown')])[2]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bd9645c-b857-4667-b9e0-84e398dcd12e",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4060b16b-e393-4c2e-b646-c87c87360f69",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Key and Mouse Press",
+      "targets": [
+        ["linkText=Key and Mouse Press", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(10)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Key and Mouse Press')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/keypress')])[2]", "xpath:href"],
+        ["xpath=//div/div/a[10]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15678c8f-d117-431b-8857-e1108468f9f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a5bcfd9f-3cfc-4b59-baab-2bd0e66d278a"]
+  }, {
+    "id": "e2ea7a7a-678e-42fc-9808-1b32156bed6b",
+    "name": "RegressionTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a5bcfd9f-3cfc-4b59-baab-2bd0e66d278a", "aa9ed0f5-5d56-4b98-a4a0-fdf30777ce54"]
+  }],
+  "urls": ["http://formy-project.herokuapp.com/"],
+  "plugins": []
+}
