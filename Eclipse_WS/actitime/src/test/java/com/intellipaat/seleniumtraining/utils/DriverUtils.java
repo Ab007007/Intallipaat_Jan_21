@@ -48,4 +48,9 @@ public class DriverUtils {
 		
 	}
 
+	
+	public static WebDriver getRemoteDriver(String type, String node)
+	{
+		return null;
+	}
 }

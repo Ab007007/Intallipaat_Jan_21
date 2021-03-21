@@ -1,0 +1,5 @@
+WinWaitActive("Open")
+Sleep(2000)
+ControlSetText("Open","","Edit1","D:\Intellipaat\Intellipaat_30_Jan_21\Notes.docx")
+Sleep(2000)
+ControlClick("Open","&Open","Button1")
