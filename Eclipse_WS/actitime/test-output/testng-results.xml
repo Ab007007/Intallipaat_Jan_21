@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Total Suggestions displayed is 10<br>]]>
+    </line>
+    <line>
+      <![CDATA[Intellipaat<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat reviews<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat login<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat careers<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat wikipedia<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat interview questions<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat bangalore address<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat glassdoor<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat logo<br>]]>
+    </line>
+    <line>
+      <![CDATA[intellipaat data science<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Parallel Demo" duration-ms="17833" started-at="2021-03-27T22:01:18 IST" finished-at="2021-03-27T22:01:35 IST">
+    <groups>
+    </groups>
+    <test name="AutoSuggetion test" duration-ms="14562" started-at="2021-03-27T22:01:18 IST" finished-at="2021-03-27T22:01:32 IST">
+      <class name="com.intellipaat.testng.parallel.AutoSuggestionsDemo">
+        <test-method status="PASS" signature="autoSuggestion()[pri:0, instance:com.intellipaat.testng.parallel.AutoSuggestionsDemo@458c1321]" name="autoSuggestion" duration-ms="14508" started-at="2021-03-27T22:01:18 IST" finished-at="2021-03-27T22:01:32 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Total Suggestions displayed is 10<br>]]>
+            </line>
+            <line>
+              <![CDATA[Intellipaat<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat reviews<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat login<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat careers<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat wikipedia<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat interview questions<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat bangalore address<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat glassdoor<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat logo<br>]]>
+            </line>
+            <line>
+              <![CDATA[intellipaat data science<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autoSuggestion -->
+      </class> <!-- com.intellipaat.testng.parallel.AutoSuggestionsDemo -->
+    </test> <!-- AutoSuggetion test -->
+    <test name="FormFill test" duration-ms="17833" started-at="2021-03-27T22:01:18 IST" finished-at="2021-03-27T22:01:35 IST">
+      <class name="com.intellipaat.testng.parallel.FormFillInFormy">
+        <test-method status="PASS" signature="formFill()[pri:0, instance:com.intellipaat.testng.parallel.FormFillInFormy@7b69c6ba]" name="formFill" duration-ms="17784" started-at="2021-03-27T22:01:18 IST" finished-at="2021-03-27T22:01:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formFill -->
+      </class> <!-- com.intellipaat.testng.parallel.FormFillInFormy -->
+    </test> <!-- FormFill test -->
+  </suite> <!-- Parallel Demo -->
+</testng-results>

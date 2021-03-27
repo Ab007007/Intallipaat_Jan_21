@@ -6,15 +6,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class ActitimeUtils extends DriverUtils
 {
-	
+	public static void validateTitle(String expectedTitle)
+	{
+		String actualTitle = driver.getTitle();
+		System.out.println(actualTitle);
+		Assert.assertEquals(actualTitle, expectedTitle);
+	}
 	
 	public static void launch(String url)
 	{
 		System.out.println("-- launching application " + url);
 		driver.get(url);
+		validateTitle("actiTIME - Login");
 	}
 
 	public static void login(String un, String pwd)
@@ -29,13 +36,16 @@ public class ActitimeUtils extends DriverUtils
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		validateTitle("actiTIME - Enter Time-Track");
 	}
 	
 	public static void logout()
 	{
 		System.out.println("---loggingout of the application---");
 		driver.findElement(By.id("logoutLink")).click();
-		driver.close();
+		validateTitle("actiTIME - Login");
+		//driver.close();
 	}
 	
 	public static void clickOnTasks()

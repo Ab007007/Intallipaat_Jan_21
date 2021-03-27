@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel Demo]" parallel="tests">
+  <test thread-count="5" name="FormFill test(failed)" parallel="tests">
+    <classes>
+      <class name="com.intellipaat.testng.parallel.FormFillInFormy">
+        <methods>
+          <include name="formFill"/>
+        </methods>
+      </class> <!-- com.intellipaat.testng.parallel.FormFillInFormy -->
+    </classes>
+  </test> <!-- FormFill test(failed) -->
+</suite> <!-- Failed suite [Parallel Demo] -->
